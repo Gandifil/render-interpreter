@@ -6,10 +6,9 @@
 #include <sstream>
 #include <iterator>
 #include "Interpreter.h"
-#include "FloatVariable.h"
-#include "StringVariable.h"
 #include "../engine/Frame.h"
 #include "../utils.h"
+#include "ContainerVariable.h"
 
 constexpr auto consolePrefix = "cpu-render> ";
 
@@ -18,11 +17,11 @@ using namespace std;
 Interpreter::Interpreter()
 {
     commands["command-list"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        return new StringVariable("Test");
+        return new StringVariable{"Test"};
     });
     commands["check-vector"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
 
-        return new StringVariable("Test");
+        return new StringVariable{"Test"};
     });
     commands["create-frame"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
         auto w = dynamic_cast<FloatVariable*>(args[0]);
