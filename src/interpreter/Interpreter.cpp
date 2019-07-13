@@ -87,14 +87,14 @@ inline IVariable* Interpreter::call(const string& expression){
         // checking float
         try {
             float x = stof(expression);
-            return saveVariable(new FloatVariable{x});
+            return saveTempVariable(new FloatVariable{x});
         }
         catch (invalid_argument& e)
         {}
 
         // checking string variable
         if (expression[0] == '"' && expression[expression.length() - 1] == '"')
-            return saveVariable(new StringVariable{expression.substr(1, expression.length() - 2)});
+            return saveTempVariable(new StringVariable{expression.substr(1, expression.length() - 2)});
     }
     else {
         // call of command
