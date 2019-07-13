@@ -1,0 +1,5 @@
+frame = create-frame(1000, 1000)
+line(frame, 10, 10, 500, 400)
+line(frame, 10, 10, 400, 500)
+line(frame, 10, 10, 500, 500)
+save(frame, "picture1.tga")
