@@ -24,9 +24,7 @@ Interpreter::Interpreter()
         return new StringVariable{"Test"};
     });
     commands["create-frame"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        auto w = dynamic_cast<FloatVariable*>(args[0]);
-        auto h = dynamic_cast<FloatVariable*>(args[1]);
-        return new Engine::Frame(*w, *h);
+        return callback(&ctor_reference<Engine::Frame, float, float>, args);
     });
     commands["line"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
         return callback(&Engine::Frame::i_line, args);

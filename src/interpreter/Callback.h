@@ -18,11 +18,33 @@ static T _expand(IVariable* var){
     return *container;
 }
 
-template<typename T, typename... Args>
-static IVariable* callback(void(T::* func)(Args...), Command::Arguments args){
+template<typename R, typename T, typename... Args>
+IVariable* callback(R(T::* func)(Args...), Command::Arguments args){
     int i = 1;
-    std::bind(func, args[0], _expand<Args>(args[i++])...);///(ExpandedList<1, Args...>::open(args)));
-    return new StringVariable{"OK!"};
+    if constexpr (std::is_same<R, void>::value)
+    {
+        std::bind(func, args[0], _expand<Args>(args[i++])...);
+        return new StringVariable{"OK!"};
+    }
+    else
+        return std::bind(func, args[0], _expand<Args>(args[i++])...);
+}
+
+template<typename R, typename... Args>
+IVariable* callback(R func(Args...), Command::Arguments args){
+    int i = 0;
+    if constexpr (std::is_same<R, void>::value)
+    {
+        std::bind(func, _expand<Args>(args[i++])...);
+        return new StringVariable{"OK!"};
+    }
+    else
+        return std::bind(func, _expand<Args>(args[i++])...)();
+}
+
+template<typename T, typename... Args>
+IVariable* ctor_reference(Args... args){
+    return new T(args...);
 }
 
 #endif //CONSOLE_CPU_RENDER_CALLBACK_H
