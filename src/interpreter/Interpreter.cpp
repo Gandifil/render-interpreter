@@ -9,6 +9,7 @@
 #include "../engine/Frame.h"
 #include "../utils.h"
 #include "ContainerVariable.h"
+#include "Callback.h"
 
 constexpr auto consolePrefix = "cpu-render> ";
 
@@ -20,7 +21,6 @@ Interpreter::Interpreter()
         return new StringVariable{"Test"};
     });
     commands["check-vector"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-
         return new StringVariable{"Test"};
     });
     commands["create-frame"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
@@ -29,19 +29,10 @@ Interpreter::Interpreter()
         return new Engine::Frame(*w, *h);
     });
     commands["line"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        auto obj = dynamic_cast<Engine::Frame*>(args[0]);
-        auto x1 = dynamic_cast<FloatVariable*>(args[1]);
-        auto y1 = dynamic_cast<FloatVariable*>(args[2]);
-        auto x2 = dynamic_cast<FloatVariable*>(args[3]);
-        auto y2 = dynamic_cast<FloatVariable*>(args[4]);
-        obj->line({*x1, *y1}, {*x2, *y2});
-        return new StringVariable{"OK!"};
+        return callback(&Engine::Frame::i_line, args);
     });
     commands["save"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        auto obj = dynamic_cast<Engine::Frame*>(args[0]);
-        auto filename = dynamic_cast<StringVariable*>(args[1]);
-        obj->save(filename->toString());
-        return new StringVariable{"OK!"};
+        return callback(&Engine::Frame::save, args);
     });
 }
 

@@ -6,6 +6,8 @@
 #define CONSOLE_CPU_RENDER_COMMAND_H
 
 #include <functional>
+#include <winsock.h>
+#include "ContainerVariable.h"
 
 class Command final{
 public:

@@ -26,6 +26,14 @@ public:
     operator T() const{
         return value;
     }
+
+    operator T&(){
+        return value;
+    }
+
+    operator const T&() const{
+        return value;
+    }
 private:
     T value;
 };

@@ -6,6 +6,9 @@
 
 //constexpr TGAColor red(255, 0, 0, 255);
 
+void Engine::Frame::i_line(float x1, float y1, float x2, float y2) {
+    line({x1, y1}, {x1, y1});
+}
 void Engine::Frame::line(Math::Vector<int, 2> a, Math::Vector<int, 2> b){
     TGAColor color(255, 0, 0, 255);
     constexpr int k =  20;
