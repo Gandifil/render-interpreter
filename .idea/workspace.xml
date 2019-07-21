@@ -11,15 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b4b304-001c-4d23-83da-c21ab5d86d71" name="Default Changelist" comment="Add constructor callback">
-      <change afterPath="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interpreter/ConstructCommand.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interpreter/FunctionCommand.h" afterDir="false" />
+    <list default="true" id="51b4b304-001c-4d23-83da-c21ab5d86d71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpreter/Callback.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpreter/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Command.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -35,13 +28,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="167">
+              <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
               <folding>
                 <element signature="e#45#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding>
+                <element signature="e#136#166#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interpreter/Command.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="189">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="e#120#141#0" expanded="true" />
               </folding>
@@ -140,12 +154,12 @@
         <option value="$PROJECT_DIR$/src/engine/Frame.h" />
         <option value="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" />
         <option value="$PROJECT_DIR$/src/interpreter/Callback.h" />
-        <option value="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" />
         <option value="$PROJECT_DIR$/src/engine/Frame.cpp" />
         <option value="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" />
         <option value="$PROJECT_DIR$/src/interpreter/ConstructCommand.h" />
-        <option value="$PROJECT_DIR$/src/interpreter/Command.h" />
         <option value="$PROJECT_DIR$/src/interpreter/FunctionCommand.h" />
+        <option value="$PROJECT_DIR$/src/interpreter/Command.h" />
+        <option value="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" />
       </list>
     </option>
   </component>
@@ -277,7 +291,7 @@
       <workItem from="1563329658969" duration="6605000" />
       <workItem from="1563366025896" duration="36430000" />
       <workItem from="1563604183648" duration="6982000" />
-      <workItem from="1563647143014" duration="21867000" />
+      <workItem from="1563647143014" duration="22953000" />
     </task>
     <task id="LOCAL-00001" summary="Fix CMakeLists file">
       <created>1563032643165</created>
@@ -314,11 +328,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563431867097</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor callback system">
+      <created>1563733794173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563733794175</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252216000" />
+    <option name="totallyTimeSpent" value="253302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,7 +354,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15503356" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15503356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -344,7 +365,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.33569404" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.33569404" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
@@ -388,7 +409,8 @@
     <MESSAGE value="Add ContainerVariable template" />
     <MESSAGE value="Add callback template" />
     <MESSAGE value="Add constructor callback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add constructor callback" />
+    <MESSAGE value="Refactor callback system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor callback system" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -442,13 +464,6 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -607,23 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#45#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -631,16 +629,6 @@
           <folding>
             <element signature="e#140#157#0" expanded="true" />
             <element signature="e#215#227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#136#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -689,12 +677,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#136#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/Command.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="189">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="e#120#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+          <folding>
+            <element signature="e#45#65#0" expanded="true" />
           </folding>
         </state>
       </provider>

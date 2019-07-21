@@ -9,6 +9,9 @@
 #include "../engine/Frame.h"
 #include "../utils.h"
 #include "ContainerVariable.h"
+#include "FunctionCommand.h"
+#include "ConstantCommand.h"
+#include "ConstructCommand.h"
 
 constexpr auto consolePrefix = "cpu-render> ";
 
@@ -17,6 +20,7 @@ using namespace std;
 Interpreter::Interpreter()
 {
     commands["command-list"] = make_unique<ConstantCommand<std::string>>("Test");
+
     commands["create-frame"] = make_unique<ConstructCommand<Engine::Frame, float, float>>();
     commands["line"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::i_line}};
     commands["save"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::save}};
