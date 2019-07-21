@@ -67,7 +67,6 @@ namespace std{
 	}
 }
 
-
 class TGAImage {
 protected:
 	unsigned char* data;
