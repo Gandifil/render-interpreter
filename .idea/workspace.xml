@@ -11,9 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b4b304-001c-4d23-83da-c21ab5d86d71" name="Default Changelist" comment="">
+    <list default="true" id="51b4b304-001c-4d23-83da-c21ab5d86d71" name="Default Changelist" comment="Add constructor callback">
+      <change afterPath="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interpreter/ConstructCommand.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interpreter/FunctionCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interpreter/Callback.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Callback.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/Callback.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Command.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -32,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="140">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#45#65#0" expanded="true" />
               </folding>
@@ -42,46 +48,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#140#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-254">
+            <state relative-caret-position="140">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interpreter/Command.h">
+        <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="363">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding>
+                <element signature="e#140#157#0" expanded="true" />
+                <element signature="e#215#227#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/interpreter/Callback.h">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/Command.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+            <state relative-caret-position="297">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding>
-                <element signature="e#122#144#0" expanded="true" />
-                <element signature="e#498#540#0" expanded="true" />
-                <element signature="e#888#918#0" expanded="true" />
-                <element signature="e#887#917#0" expanded="true" />
+                <element signature="e#120#141#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/FunctionCommand.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -89,21 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-665">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="757" column="42" selection-start-line="757" selection-start-column="42" selection-end-line="757" selection-end-column="42" />
-              <folding>
-                <element signature="e#23786#23841#0" expanded="true" />
-                <element signature="e#25306#25346#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="496">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -137,15 +137,19 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/interpreter/ColorVariable.h" />
         <option value="$PROJECT_DIR$/src/utils.h" />
-        <option value="$PROJECT_DIR$/src/engine/Frame.cpp" />
         <option value="$PROJECT_DIR$/src/engine/Frame.h" />
-        <option value="$PROJECT_DIR$/src/interpreter/Command.h" />
         <option value="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" />
         <option value="$PROJECT_DIR$/src/interpreter/Callback.h" />
         <option value="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" />
+        <option value="$PROJECT_DIR$/src/engine/Frame.cpp" />
+        <option value="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" />
+        <option value="$PROJECT_DIR$/src/interpreter/ConstructCommand.h" />
+        <option value="$PROJECT_DIR$/src/interpreter/Command.h" />
+        <option value="$PROJECT_DIR$/src/interpreter/FunctionCommand.h" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="400" />
     <option name="width" value="1440" />
@@ -156,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,7 +196,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,7 +275,9 @@
       <workItem from="1563073127826" duration="10751000" />
       <workItem from="1563246424844" duration="16683000" />
       <workItem from="1563329658969" duration="6605000" />
-      <workItem from="1563366025896" duration="9252000" />
+      <workItem from="1563366025896" duration="36430000" />
+      <workItem from="1563604183648" duration="6982000" />
+      <workItem from="1563647143014" duration="21867000" />
     </task>
     <task id="LOCAL-00001" summary="Fix CMakeLists file">
       <created>1563032643165</created>
@@ -301,11 +307,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563425482086</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add constructor callback">
+      <created>1563431867097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563431867097</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196189000" />
+    <option name="totallyTimeSpent" value="252216000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,12 +333,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15302013" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15503356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,18 +356,18 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14899328" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15570469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32719547" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3895184" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.33569404" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.33569404" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
@@ -374,18 +387,10 @@
     <MESSAGE value="Fix" />
     <MESSAGE value="Add ContainerVariable template" />
     <MESSAGE value="Add callback template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add callback template" />
+    <MESSAGE value="Add constructor callback" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add constructor callback" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/engine/Frame.cpp</url>
-          <line>47</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="need_type" />
@@ -503,20 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="1833" column="26" lean-forward="true" selection-start-line="1833" selection-start-column="26" selection-end-line="1833" selection-end-column="26" />
-          <folding>
-            <element signature="e#38500#38514#0" expanded="true" />
-            <element signature="e#38581#38595#0" expanded="true" />
-            <element signature="e#49812#49826#0" expanded="true" />
-            <element signature="e#54646#54660#0" expanded="true" />
-            <element signature="e#57085#57119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/mingw64/x86_64-w64-mingw32/include/assert.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -534,42 +525,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="319" column="2" lean-forward="true" selection-start-line="319" selection-start-column="2" selection-end-line="319" selection-end-column="2" />
-          <folding>
-            <element signature="e#10358#10385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="971" selection-start-line="971" selection-end-line="971" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="281" selection-start-line="281" selection-end-line="281" />
-          <folding>
-            <element signature="e#3575#3596#0" expanded="true" />
-            <element signature="e#7324#7364#0" expanded="true" />
-            <element signature="e#7405#7462#0" expanded="true" />
-            <element signature="e#7860#7902#0" expanded="true" />
-            <element signature="e#8294#8371#0" expanded="true" />
-            <element signature="e#10215#10253#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,74 +546,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
+    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="148">
+          <caret line="807" column="4" selection-start-line="807" selection-start-column="4" selection-end-line="807" selection-end-column="4" />
+          <folding>
+            <element signature="e#12245#12289#0" expanded="true" />
+            <element signature="e#23786#23841#0" expanded="true" />
+            <element signature="e#24595#24653#0" expanded="true" />
+            <element signature="e#25112#25152#0" expanded="true" />
+            <element signature="e#25306#25346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_function.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="520" column="35" selection-start-line="520" selection-start-column="35" selection-end-line="520" selection-end-column="35" />
+          <folding>
+            <element signature="e#3575#3596#0" expanded="true" />
+            <element signature="e#7324#7364#0" expanded="true" />
+            <element signature="e#7405#7462#0" expanded="true" />
+            <element signature="e#7860#7902#0" expanded="true" />
+            <element signature="e#8294#8371#0" expanded="true" />
+            <element signature="e#10215#10253#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="830" column="37" selection-start-line="830" selection-start-column="37" selection-end-line="830" selection-end-column="64" />
+        <state relative-caret-position="4401">
+          <caret line="163" column="12" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/Callback.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="837">
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="68" column="11" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="28" />
           <folding>
-            <element signature="e#140#157#0" expanded="true" />
+            <element signature="e#37456#37491#0" expanded="true" />
+            <element signature="e#38500#38514#0" expanded="true" />
+            <element signature="e#38581#38595#0" expanded="true" />
+            <element signature="e#49812#49826#0" expanded="true" />
+            <element signature="e#54646#54660#0" expanded="true" />
+            <element signature="e#55470#55497#0" expanded="true" />
+            <element signature="e#57085#57119#0" expanded="true" />
+            <element signature="e#64419#64461#0" expanded="true" />
+            <element signature="e#65542#65556#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-254">
+        <state relative-caret-position="140">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/functional">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="757" column="42" selection-start-line="757" selection-start-column="42" selection-end-line="757" selection-end-column="42" />
-          <folding>
-            <element signature="e#23786#23841#0" expanded="true" />
-            <element signature="e#25306#25346#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="140">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#45#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/Command.h">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="172">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="e#140#157#0" expanded="true" />
+            <element signature="e#215#227#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/Callback.h">
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="459">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <element signature="e#122#144#0" expanded="true" />
-            <element signature="e#498#540#0" expanded="true" />
-            <element signature="e#888#918#0" expanded="true" />
-            <element signature="e#887#917#0" expanded="true" />
+            <element signature="e#136#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstructCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#147#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/FunctionCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="347" column="28" selection-start-line="347" selection-start-column="10" selection-end-line="347" selection-end-column="28" />
+          <folding>
+            <element signature="e#10358#10385#0" expanded="true" />
+            <element signature="e#10887#10903#0" expanded="true" />
+            <element signature="e#11018#11031#0" expanded="true" />
+            <element signature="e#11152#11172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/Command.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#120#141#0" expanded="true" />
           </folding>
         </state>
       </provider>

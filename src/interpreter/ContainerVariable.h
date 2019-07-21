@@ -34,7 +34,7 @@ public:
     operator const T&() const{
         return value;
     }
-private:
+protected:
     T value;
 };
 

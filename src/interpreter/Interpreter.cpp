@@ -9,7 +9,6 @@
 #include "../engine/Frame.h"
 #include "../utils.h"
 #include "ContainerVariable.h"
-#include "Callback.h"
 
 constexpr auto consolePrefix = "cpu-render> ";
 
@@ -17,21 +16,10 @@ using namespace std;
 
 Interpreter::Interpreter()
 {
-    commands["command-list"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        return new StringVariable{"Test"};
-    });
-    commands["check-vector"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        return new StringVariable{"Test"};
-    });
-    commands["create-frame"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        return callback(&ctor_reference<Engine::Frame, float, float>, args);
-    });
-    commands["line"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        return callback(&Engine::Frame::i_line, args);
-    });
-    commands["save"] = make_unique<Command>([](std::vector<IVariable*>& args) -> IVariable*{
-        return callback(&Engine::Frame::save, args);
-    });
+    commands["command-list"] = make_unique<ConstantCommand<std::string>>("Test");
+    commands["create-frame"] = make_unique<ConstructCommand<Engine::Frame, float, float>>();
+    commands["line"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::i_line}};
+    commands["save"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::save}};
 }
 
 void Interpreter::listen(istream& input){
