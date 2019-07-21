@@ -16,6 +16,8 @@ public:
 
     ContainerVariable(T&& data):value{std::move(data)}{}
 
+
+
     const std::string toString() const {
         if constexpr (std::is_same<T, std::string>::value)
             return value;

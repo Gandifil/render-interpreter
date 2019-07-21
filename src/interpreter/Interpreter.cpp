@@ -20,6 +20,10 @@ using namespace std;
 Interpreter::Interpreter()
 {
     commands["command-list"] = make_unique<ConstantCommand<std::string>>("Test");
+    // color variable
+    commands["RED"] = make_unique<ConstantCommand<TGAColor>>(255, 0, 0, 255);
+    commands["GREEN"] = make_unique<ConstantCommand<TGAColor>>(0, 255, 0, 255);
+    commands["BLUE"] = make_unique<ConstantCommand<TGAColor>>(0, 0, 255, 255);
 
     commands["create-frame"] = make_unique<ConstructCommand<Engine::Frame, float, float>>();
     commands["line"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::i_line}};

@@ -59,6 +59,14 @@ struct TGAColor {
 	}
 };
 
+namespace std{
+	inline std::string to_string(const TGAColor& color){
+		return std::to_string(color.r) + ", " +
+					std::to_string(color.g) + ", " +
+					std::to_string(color.b) + ";";
+	}
+}
+
 
 class TGAImage {
 protected:

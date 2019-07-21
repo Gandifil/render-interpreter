@@ -15,6 +15,10 @@ public:
 
     ConstantCommand(T&& value):ContainerVariable<T>{std::move(value)}{}
 
+    template<typename... Args>
+    ConstantCommand(Args&&... args):
+        ContainerVariable<T>{T{std::forward<Args>(args)...}}{}
+
     inline ReturnedValue operator()(Arguments args){
         //It must copy itself, because copy will be destroyed
         return new ContainerVariable<T>(*this);

@@ -13,7 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="51b4b304-001c-4d23-83da-c21ab5d86d71" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tgaimage.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/tgaimage.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+            <state relative-caret-position="275">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
               <folding>
                 <element signature="e#45#65#0" expanded="true" />
               </folding>
@@ -41,10 +44,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="830" column="22" lean-forward="true" selection-start-line="830" selection-start-column="22" selection-end-line="830" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="302">
+              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-238">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#140#157#0" expanded="true" />
+                <element signature="e#215#227#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,20 +77,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <state relative-caret-position="140">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#136#166#0" expanded="true" />
+                <element signature="e#439#457#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -74,20 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="363">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-              <folding>
-                <element signature="e#140#157#0" expanded="true" />
-                <element signature="e#215#227#0" expanded="true" />
-              </folding>
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -116,8 +120,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="140">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/math/Vector.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#45#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +154,6 @@
       <list>
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/src/engine/math/OBJReader.h" />
-        <option value="$PROJECT_DIR$/src/tgaimage.h" />
         <option value="$PROJECT_DIR$/src/engine/Model.h" />
         <option value="$PROJECT_DIR$/src/engine/math/Vector.h" />
         <option value="$PROJECT_DIR$/src/interpreter/IVariable.h" />
@@ -152,14 +167,15 @@
         <option value="$PROJECT_DIR$/src/interpreter/ColorVariable.h" />
         <option value="$PROJECT_DIR$/src/utils.h" />
         <option value="$PROJECT_DIR$/src/engine/Frame.h" />
-        <option value="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" />
         <option value="$PROJECT_DIR$/src/interpreter/Callback.h" />
         <option value="$PROJECT_DIR$/src/engine/Frame.cpp" />
-        <option value="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" />
         <option value="$PROJECT_DIR$/src/interpreter/ConstructCommand.h" />
         <option value="$PROJECT_DIR$/src/interpreter/FunctionCommand.h" />
         <option value="$PROJECT_DIR$/src/interpreter/Command.h" />
         <option value="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" />
+        <option value="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" />
+        <option value="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" />
+        <option value="$PROJECT_DIR$/src/tgaimage.h" />
       </list>
     </option>
   </component>
@@ -236,12 +252,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.simply_run">
     <configuration name="script_run" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="debug_commands.txt" WORKING_DIR="file://../" PASS_PARENT_ENVS_2="true" PROJECT_NAME="console_cpu_render" TARGET_NAME="console_cpu_render" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="console_cpu_render" RUN_TARGET_NAME="console_cpu_render">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="simply_run" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="console_cpu_render" TARGET_NAME="console_cpu_render" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="console_cpu_render" RUN_TARGET_NAME="console_cpu_render">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.script_run" />
+      <item itemvalue="Application.simply_run" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -291,7 +316,7 @@
       <workItem from="1563329658969" duration="6605000" />
       <workItem from="1563366025896" duration="36430000" />
       <workItem from="1563604183648" duration="6982000" />
-      <workItem from="1563647143014" duration="22953000" />
+      <workItem from="1563647143014" duration="25653000" />
     </task>
     <task id="LOCAL-00001" summary="Fix CMakeLists file">
       <created>1563032643165</created>
@@ -335,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563733794175</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix">
+      <created>1563734859078</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563734859078</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253302000" />
+    <option name="totallyTimeSpent" value="256002000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,13 +391,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.33569404" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.33569404" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
@@ -405,12 +437,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix CMakeLists file" />
-    <MESSAGE value="Fix" />
     <MESSAGE value="Add ContainerVariable template" />
     <MESSAGE value="Add callback template" />
     <MESSAGE value="Add constructor callback" />
     <MESSAGE value="Refactor callback system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor callback system" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -530,16 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/math/Vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="e#45#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
@@ -590,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4401">
-          <caret line="163" column="12" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/Callback.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
@@ -618,17 +633,6 @@
             <element signature="e#57085#57119#0" expanded="true" />
             <element signature="e#64419#64461#0" expanded="true" />
             <element signature="e#65542#65556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="e#140#157#0" expanded="true" />
-            <element signature="e#215#227#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,41 +667,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#136#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="830" column="22" lean-forward="true" selection-start-line="830" selection-start-column="22" selection-end-line="830" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -711,13 +691,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#140#157#0" expanded="true" />
+            <element signature="e#215#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+        <state relative-caret-position="275">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
           <folding>
             <element signature="e#45#65#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/math/Vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#45#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#136#166#0" expanded="true" />
+            <element signature="e#439#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
