@@ -9,6 +9,7 @@
 void Engine::Frame::i_line(float x1, float y1, float x2, float y2, const TGAColor& color) {
     line({x1, y1}, {x2, y2}, color);
 }
+
 void Engine::Frame::line(Math::Vector<int, 2> a, Math::Vector<int, 2> b, const TGAColor& color){
     bool steep = false;
     if (std::abs(a.x() - b.x()) < std::abs(a.y() - b.y())) {
