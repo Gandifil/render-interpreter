@@ -21,9 +21,9 @@ Interpreter::Interpreter()
 {
     commands["command-list"] = make_unique<ConstantCommand<std::string>>("Test");
     // color variable
-    commands["RED"] = make_unique<ConstantCommand<TGAColor>>((unsigned char)255, (unsigned char)0, (unsigned char)0, (unsigned char)255);
-    commands["GREEN"] = make_unique<ConstantCommand<TGAColor>>((unsigned char)0, (unsigned char)255, (unsigned char)0, (unsigned char)255);
-    commands["BLUE"] = make_unique<ConstantCommand<TGAColor>>((unsigned char)0, (unsigned char)0, (unsigned char)255, (unsigned char)255);
+    commands["RED"] = make_unique<ConstantCommand<Engine::Color>>(Engine::Color::RED);
+    commands["GREEN"] = make_unique<ConstantCommand<Engine::Color>>(Engine::Color::GREEN);
+    commands["BLUE"] = make_unique<ConstantCommand<Engine::Color>>(Engine::Color::BLUE);
 
     // constructors
     commands["create-frame"] = make_unique<ConstructCommand<Engine::Frame, float, float>>();

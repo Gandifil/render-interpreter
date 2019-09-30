@@ -2,6 +2,8 @@
 #define __IMAGE_H__
 
 #include <fstream>
+#include "engine/Color.h"
+
 #pragma pack(push,1)
 struct TGA_Header {
 	char idlength;
@@ -19,31 +21,25 @@ struct TGA_Header {
 };
 #pragma pack(pop)
 
-
-
-struct TGAColor {
-	union {
-		struct {
-			unsigned char b, g, r, a;
-		};
-		unsigned char raw[4];
-		unsigned int val;
-	};
+struct TGAColor: public Engine::Color {
 	int bytespp;
 
-	TGAColor() : val(0), bytespp(1) {
+    TGAColor(const Engine::Color& color):
+            Engine::Color{color}, bytespp(1) {}
+
+	TGAColor() : Engine::Color{0}, bytespp(1) {
 	}
 
-	constexpr TGAColor(unsigned char R, unsigned char G, unsigned char B, unsigned char A) : b(B), g(G), r(R), a(A), bytespp(4) {
+	constexpr TGAColor(unsigned char R, unsigned char G, unsigned char B, unsigned char A) : Engine::Color{R, G, B, A}, bytespp(4) {
 	}
 
-	TGAColor(int v, int bpp) : val(v), bytespp(bpp) {
+	TGAColor(int v, int bpp) : Engine::Color(v), bytespp(bpp) {
 	}
 
-	TGAColor(const TGAColor &c) : val(c.val), bytespp(c.bytespp) {
+	TGAColor(const TGAColor &c) : Engine::Color(c.val), bytespp(c.bytespp) {
 	}
 
-	TGAColor(const unsigned char *p, int bpp) : val(0), bytespp(bpp) {
+	TGAColor(const unsigned char *p, int bpp) : Engine::Color(0), bytespp(bpp) {
 		for (int i=0; i<bpp; i++) {
 			raw[i] = p[i];
 		}
@@ -57,21 +53,6 @@ struct TGAColor {
 		return *this;
 	}
 };
-
-//namespace std{
-//	inline std::string to_string(const TGAColor& color){
-//		return std::to_string(static_cast<int>(color.r)) + ", " +
-//					std::to_string(static_cast<int>(color.g)) + ", " +
-//					std::to_string(static_cast<int>(color.b)) + ";";
-//	}
-//}
-
-
-namespace std {
-	inline string to_string(const TGAColor& color) {
-		return "";// to_string(color.r);
-	}
-}
 
 class TGAImage {
 protected:
