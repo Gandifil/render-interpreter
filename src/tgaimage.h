@@ -2,7 +2,6 @@
 #define __IMAGE_H__
 
 #include <fstream>
-
 #pragma pack(push,1)
 struct TGA_Header {
 	char idlength;
@@ -59,11 +58,18 @@ struct TGAColor {
 	}
 };
 
-namespace std{
-	inline std::string to_string(const TGAColor& color){
-		return std::to_string(color.r) + ", " +
-					std::to_string(color.g) + ", " +
-					std::to_string(color.b) + ";";
+//namespace std{
+//	inline std::string to_string(const TGAColor& color){
+//		return std::to_string(static_cast<int>(color.r)) + ", " +
+//					std::to_string(static_cast<int>(color.g)) + ", " +
+//					std::to_string(static_cast<int>(color.b)) + ";";
+//	}
+//}
+
+
+namespace std {
+	inline string to_string(const TGAColor& color) {
+		return "";// to_string(color.r);
 	}
 }
 

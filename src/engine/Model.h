@@ -8,15 +8,30 @@
 #include <string>
 #include "../interpreter/IVariable.h"
 #include "../engine/math/Vector.h"
+#include "../engine/math/Polygon.h"
 
 namespace Engine{
     class Model: public IVariable{
+    private:
+        std::vector<Math::Polygon<float>> polygons;
+
     public:
-        Model(const std::string& filename);
+        explicit Model(const std::string& filename);
 
-        const std::vector<Math::Vec3f> v, vn;
-        const std::vector<Math::Vector<float, float>> vt;
+		explicit Model(const Model& model)
+		{
+			// DON"T DO IT
+		};
 
+        const std::vector<Math::Polygon<float>>& getPolygons() const
+        {
+            return polygons;
+        }
+
+        const std::string toString() const override
+        {
+            return "Model";
+        }
     };
 }
 

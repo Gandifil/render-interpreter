@@ -1,8 +1,8 @@
-#include <iostream>
 #include "interpreter/Interpreter.h"
 
+Interpreter interpreter;
+
 int main(int argc, char* argv[]) {
-    Interpreter interpreter;
     if (argc > 1){
         if (!freopen(argv[1], "r", stdin)){
             std::cout << "Incorrect filename " << argv[1]  <<"!" << std::endl

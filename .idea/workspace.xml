@@ -12,11 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51b4b304-001c-4d23-83da-c21ab5d86d71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/engine/Model.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/engine/Model.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/debug_commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/engine/Frame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Frame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Frame.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Frame.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/engine/math/Vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/engine/math/Vector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Command.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/ConstructCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/ConstructCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/FunctionCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/FunctionCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/IVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/IVariable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interpreter/Interpreter.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/interpreter/Interpreter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tgaimage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tgaimage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tgaimage.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/tgaimage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#140#157#0" expanded="true" />
                 <element signature="e#215#227#0" expanded="true" />
@@ -60,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+            <state relative-caret-position="675">
+              <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -71,11 +86,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Model.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="280">
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding>
                 <element signature="e#116#133#0" expanded="true" />
               </folding>
@@ -84,10 +99,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/math/Vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="1215">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#45#61#0" expanded="true" />
               </folding>
@@ -98,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -127,7 +160,6 @@
         <option value="$PROJECT_DIR$/debug_commands" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/interpreter/Interpreter.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/interpreter/ColorVariable.h" />
         <option value="$PROJECT_DIR$/src/utils.h" />
         <option value="$PROJECT_DIR$/src/interpreter/Callback.h" />
@@ -137,11 +169,12 @@
         <option value="$PROJECT_DIR$/src/interpreter/Interpreter.cpp" />
         <option value="$PROJECT_DIR$/src/interpreter/ConstantCommand.h" />
         <option value="$PROJECT_DIR$/src/interpreter/ContainerVariable.h" />
-        <option value="$PROJECT_DIR$/src/tgaimage.h" />
         <option value="$PROJECT_DIR$/src/engine/Frame.h" />
         <option value="$PROJECT_DIR$/debug_commands.txt" />
         <option value="$PROJECT_DIR$/src/engine/Frame.cpp" />
         <option value="$PROJECT_DIR$/src/engine/Model.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/tgaimage.h" />
       </list>
     </option>
   </component>
@@ -156,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,6 +224,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,6 +317,7 @@
       <workItem from="1563604183648" duration="6982000" />
       <workItem from="1563647143014" duration="29113000" />
       <workItem from="1563895480778" duration="4316000" />
+      <workItem from="1569849535789" duration="549000" />
     </task>
     <task id="LOCAL-00001" summary="Fix CMakeLists file">
       <created>1563032643165</created>
@@ -352,7 +386,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263778000" />
+    <option name="totallyTimeSpent" value="264327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,14 +399,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15704697" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1590604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32719547" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3895184" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -484,13 +519,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/debug_commands" />
     <entry file="file://$PROJECT_DIR$/src/engine/math/OBJReader.h" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/ColorVariable.h" />
     <entry file="file://$PROJECT_DIR$/src/interpreter/FloatVariable.h" />
     <entry file="file://$PROJECT_DIR$/src/interpreter/StringVariable.h" />
@@ -648,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/interpreter/Interpreter.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -662,55 +683,6 @@
           <folding>
             <element signature="e#45#65#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#140#157#0" expanded="true" />
-            <element signature="e#215#227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#136#166#0" expanded="true" />
-            <element signature="e#439#457#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Model.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/math/Vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#45#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -731,13 +703,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ContainerVariable.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#140#157#0" expanded="true" />
+            <element signature="e#215#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interpreter/ConstantCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#136#166#0" expanded="true" />
+            <element signature="e#439#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Frame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Model.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/math/Vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#45#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/Frame.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/Model.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="280">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
             <element signature="e#116#133#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tgaimage.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>

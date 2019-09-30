@@ -21,11 +21,19 @@ Interpreter::Interpreter()
 {
     commands["command-list"] = make_unique<ConstantCommand<std::string>>("Test");
     // color variable
-    commands["RED"] = make_unique<ConstantCommand<TGAColor>>(255, 0, 0, 255);
-    commands["GREEN"] = make_unique<ConstantCommand<TGAColor>>(0, 255, 0, 255);
-    commands["BLUE"] = make_unique<ConstantCommand<TGAColor>>(0, 0, 255, 255);
+    commands["RED"] = make_unique<ConstantCommand<TGAColor>>((unsigned char)255, (unsigned char)0, (unsigned char)0, (unsigned char)255);
+    commands["GREEN"] = make_unique<ConstantCommand<TGAColor>>((unsigned char)0, (unsigned char)255, (unsigned char)0, (unsigned char)255);
+    commands["BLUE"] = make_unique<ConstantCommand<TGAColor>>((unsigned char)0, (unsigned char)0, (unsigned char)255, (unsigned char)255);
 
+    // constructors
     commands["create-frame"] = make_unique<ConstructCommand<Engine::Frame, float, float>>();
+    commands["create-model"] = make_unique<ConstructCommand<Engine::Model, string>>();
+    commands["create-scene"] = make_unique<ConstructCommand<Engine::Scene>>();
+    commands["create-object"] = make_unique<ConstructCommand<Engine::Scene::Object, Engine::Model&>>();
+
+    commands["add-object"] = unique_ptr<Command>{new FunctionCommand{&Engine::Scene::add}};
+    // frame
+    commands["render"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::i_render}};
     commands["line"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::i_line}};
     commands["save"] = unique_ptr<Command>{new FunctionCommand{&Engine::Frame::save}};
 }

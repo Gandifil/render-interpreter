@@ -9,6 +9,7 @@
 #include "IVariable.h"
 #include "../tgaimage.h"
 
+
 template<typename T>
 class ContainerVariable: public IVariable{
 public:
